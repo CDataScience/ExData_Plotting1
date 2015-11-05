@@ -44,13 +44,13 @@ loadLibraries(c('sqldf'))
 OS <- Sys.info()['sysname']
 workingDirectory <- getWorkingDirectoryPath('Coursera\\Exploratory Data Analysis\\Project1')
 setwd(workingDirectory)
-url <- 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
-# windows environment
- if (grepl(OS, "Windows")){
-   download.file(url, file.path(workingDirectory, 'household_power_consumption.zip'))
- }else{ # linux osx must have curl installed
-   download.file(url, file.path(workingDirectory, 'household_power_consumption.zip'), method = 'curl') 
- }
+# url <- 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
+# # windows environment
+#  if (grepl(OS, "Windows")){
+#    download.file(url, file.path(workingDirectory, 'household_power_consumption.zip'))
+#  }else{ # linux osx must have curl installed
+#    download.file(url, file.path(workingDirectory, 'household_power_consumption.zip'), method = 'curl') 
+#  }
 
 
 #unzip(file.path(workingDirectory, 'household_power_consumption.zip'))
